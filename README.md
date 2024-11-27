@@ -38,6 +38,7 @@ mutation{
     firstName
     lastName
     email
+    asdas
   }
 }
 
