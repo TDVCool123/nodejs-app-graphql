@@ -3,10 +3,9 @@ on:
  push:
    branches: [cicd-docker-ec2, main]
 
-
 jobs:
  build:
-   runs-on: ubuntu-latest
+   runs-on: self-hosted
    steps:
      - name: Checkout source
        uses: actions/checkout@v4
