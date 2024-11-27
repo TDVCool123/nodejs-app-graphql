@@ -15,7 +15,7 @@ jobs:
          username: ${{ vars.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKERHUB_TOKEN }}
      - name: Build docker image
-       run: docker build -t ${{ vars.DOCKER_USERNAME }}/nodejs-app .
+       run: sudo docker build -t ${{ vars.DOCKER_USERNAME }}/nodejs-app .
      - name: Publish image to docker hub
        run: docker push ${{ vars.DOCKER_USERNAME }}/nodejs-app:latest
  deploy:
